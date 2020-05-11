@@ -1,0 +1,43 @@
+
+// ********************     PALLETE     ********************
+$primary-dark: #283645;
+$secondary-dark: #2F4052; //portfolio, our price
+ // input, footer
+$primary-white: #ffffff;
+$secondary-white: #A3B1BF;
+$third-white: #f5f7fa;
+
+$celadon: #00BC9C;
+$cyan: #00BC9C;
+$pale-turquoise: #74b0a4;
+$olive-drab: #00BC9C;
+$graphite: #73879C; //skills, client about us, our price button
+
+
+
+$site-background: $third-white;
+$font-color: $graphite;
+$secondary-font-color: $secondary-white;
+
+$nav-item-focus-color: $celadon;
+$nav-vertical-item-focus-color: $third-white;
+$nav-button-toggle-color: $secondary-dark;
+$nav-button-search-color: $secondary-dark;
+
+$button-default-color: $secondary-dark;
+$button-green-color: $celadon;
+$button-cyan-color: $cyan;
+$button-turquoise-color: $pale-turquoise;
+$button-white-color: $secondary-white;
+$button-olive-color: $olive-drab;
+$button-graphite-color: $graphite;
+
+$input-background-color: $third-white;
+
+// ****************** BREAKPOINTS *************************/
+
+
+$screen-small: 35.94rem;                    // **  575px  **
+$screen-medium: 47.94rem;                   // **  767px  **
+$screen-large: 61.94rem;                    // **  991px  **
+$screen-extra-large: 74.94rem;              // ** 1199px  **

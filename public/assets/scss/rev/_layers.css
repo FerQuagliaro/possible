@@ -1,0 +1,73 @@
+/* Style text */
+/* Title */
+.tp-caption.title-slide {	
+	color: #fff;
+	letter-spacing: 1.1px!important;	
+	text-transform: uppercase;	
+	font-family: "Montserrat", sans-serif;
+}
+
+.tp-caption.title-slide span {
+	color: #f9bf3b;
+}
+
+/* Sub title */
+.tp-caption.sub-title {
+	font-family: "Poppins", sans-serif;	  
+    color: #fff;
+}
+
+/* Button */
+.tp-caption.flat-button-slider {
+	border: 2px solid #fff;
+	font-family: "Montserrat",sans-serif;
+	color: #fff;	
+	min-width: 120px!important;
+	padding: 0 31px 0 31px;
+	line-height: 50px;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 3px;
+	text-transform: uppercase;	
+	-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
+		    transition: all 0.3s ease-in-out;	
+}
+
+.tp-caption.flat-button-slider.bg-orange  {
+    border-color: #00BC9C;
+    background: #00BC9C;	
+}
+
+.tp-caption.flat-button-slider.white  {
+    border-color: #fff;
+    background: #fff;	
+    color: #222;
+}
+
+.tp-caption.flat-button-slider.bg-orange:hover {
+	background-color: #333;
+	border-color: #333;
+}
+
+.tp-caption.flat-button-slider:hover {
+	background-color: #00BC9C;
+	border-color: #00BC9C;
+}
+.tp-caption.flat-button-slider {
+    font-family: Montserrat, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    padding: 0px 31px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out 0s;
+}

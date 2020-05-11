@@ -1,0 +1,27 @@
+
+// Modules
+@import "modules/normalize.scss";
+@import "modules/variables";
+@import "modules/mixins";
+@import "modules/fonts";
+
+//Fontello
+@import "modules/fontello";
+
+//Fontello
+@import "rev/settings";
+@import "rev/owl.carousel.min";
+@import "rev/layers";
+
+
+//Partials
+@import "partials/top";
+@import "partials/base";
+@import "partials/navbar";
+@import "partials/slider";
+@import "partials/owl-slider";
+@import "partials/services-section";
+@import "partials/portfolio";
+@import "partials/contact";
+@import "partials/recent-activity";
+@import "partials/footer";

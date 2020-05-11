@@ -1,0 +1,160 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: $primary-white;
+
+  &__container {
+    background-color: $primary-white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 6rem;
+    transition: min-height 0.8s;
+  }
+
+  &--low {
+    min-height: 4rem;
+    background-color:rgba(255, 255, 255, 0.81);
+  }
+
+  &__brand {
+    margin: 0;
+  }
+}
+
+.logo {
+  &__text {
+    background-position: left center;
+    background-size: 2.5rem 1.7rem;
+    display: inline-block;
+    font-family: 'Lato';
+    font-size: 1.6rem;
+    font-weight: normal;
+    letter-spacing: 1.1px;
+  }
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    display: inline-block;
+    font-family: 'Lato';
+    font-size: 1.1rem;
+    margin-left: 1.8rem;
+    padding: 0.9rem 0;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $nav-item-focus-color;
+    }
+
+    &--active {
+      color: $nav-item-focus-color;
+    }
+  }
+
+  &__form {
+    display: inline-block;
+    margin-left: 1.5rem;
+  }
+
+  &__input {
+    font-family: 'Lato';
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: width 0.5s, opacity 1.5s;
+    width: 0;
+  }
+
+  &__input--visible {
+    opacity: 1;
+    width: 10.6rem;
+  }
+}
+
+.button-toggle {
+  background-color: transparent;
+  border: none;
+  color: $nav-button-toggle-color;
+  display: none;
+  float: right;
+  margin-top: 0.15rem;
+  padding: 0 .8rem;
+}
+
+.button-search {
+  background-color: transparent;
+  border: none;
+  color: $nav-button-search-color;
+}
+
+@media (max-width: $screen-large) {
+  .nav {
+    &__link {
+      margin-left: 1.3rem;
+    }
+
+    &__form--hidden {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $screen-medium) {
+  .header {
+    &__container {
+      flex-wrap: wrap;
+      min-height: 3rem;
+      padding: 0;
+    }
+
+    &__brand {
+      flex-basis: 100%;
+      padding-left: .5rem;
+    }
+
+    &__navbar {
+      flex-basis: 100%;
+    }
+  }
+
+  .button-toggle--visible {
+    display: inline-block;
+  }
+
+  .nav {
+    &__item {
+      display: block;
+    }
+
+    &__link {
+      margin: 0;
+      padding: .45rem 0;
+      text-align: center;
+      width: 100%;
+
+      &:hover,
+      &:focus {
+        background-color: $nav-vertical-item-focus-color;
+      }
+    }
+
+    &--closed {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease;
+    }
+
+    &--open {
+      height: 14rem;
+    }
+  }
+}

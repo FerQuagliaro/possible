@@ -1,0 +1,148 @@
+.hide {
+  opacity: 0;
+  transform: translateY(300px);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $site-background;
+  color: $font-color;
+  font-family: 'Lato';
+}
+
+a {
+  color: $font-color;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+p{
+  line-height: 20px;
+}
+strong {
+  font-family: 'Lato Bold';
+  font-weight: normal;
+}
+
+blockquote {
+  margin: 0;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0 , 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1050px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.input {
+  background-color: $input-background-color;
+  border: 1px solid lighten(#222327, 5%);
+  color: $secondary-font-color;
+}
+
+.button {
+  background-color: $button-default-color;
+  border: none;
+  color: $primary-white;
+  padding: 0.5rem;
+  width: 7.5rem;
+
+  &:hover {
+    background-color: darken($button-default-color, 10%);
+  }
+
+  &--active,
+  &--active:hover {
+    background-color: $button-cyan-color;
+    font-family: "Roboto-Bold";
+  }
+
+  &--rounded {
+    border-bottom: 4px solid;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 0.6rem;
+    width: 9.2rem;
+  }
+
+  &--green {
+    background-color: $button-green-color;
+    border-bottom-color: darken($button-green-color, 15%);
+
+    &:hover,
+    &:focus {
+      background-color: darken($button-green-color, 10%);
+    }
+  }
+
+  &--cyan {
+    background-color: $button-cyan-color;
+    border-bottom-color: darken($button-cyan-color, 15%);
+
+    &:hover,
+    &:focus {
+      background-color: darken($button-cyan-color, 10%);
+    }
+  }
+
+  &--white {
+    background-color: $secondary-white;
+    border-bottom-color: darken($secondary-white, 15%);
+    color: $primary-dark;
+
+    &:hover,
+    &:focus {
+      background-color: darken($secondary-white, 10%);
+    }
+  }
+
+  &--turquoise {
+    background-color: $button-turquoise-color;
+    border-bottom-color: darken($button-turquoise-color, 15%);
+
+    &:hover,
+    &:focus {
+      background-color: darken($button-turquoise-color, 10%);
+    }
+  }
+
+  &--olive {
+    background-color: $button-olive-color;
+    border-bottom-color: darken($button-olive-color, 15%);
+
+    &:hover,
+    &:focus {
+      background-color: darken($button-olive-color, 10%);
+    }
+  }
+
+  &--graphite {
+    background-color: $button-graphite-color;
+    border-bottom-color: darken($button-graphite-color, 15%);
+
+    &:hover,
+    &:focus {
+      background-color: darken($button-graphite-color, 10%);
+    }
+  }
+}

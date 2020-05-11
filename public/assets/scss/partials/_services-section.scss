@@ -1,0 +1,147 @@
+.services {
+  margin-top: 4rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  margin:auto;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__header {
+    flex-basis: 100%;
+    font-family: 'Lato Bold';
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 3rem 0;
+    text-align: center;
+  }
+  &__description {
+    font-family: 'Source Sans Pro Regular';
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+.service {
+  align-items: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: 33%;
+  flex-direction: column;
+  padding: 0 1rem;
+  transition: opacity 1s, transform 1s;
+
+
+  &.hidden {
+    @include animate(0, 200px);
+  }
+
+  &__icon {
+    background-color: $secondary-dark;
+    background-origin: content-box;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    height: 2.3rem;
+    padding: 2.3rem;
+    width: 2.3rem;
+    
+    
+
+    &--passion {
+      background-image: url('../images/icon-web-design.png');
+    }
+
+    &--creativity {
+      background-image: url('../images/icon-ui-design.png');
+    }
+
+    &--quality {
+      background-image: url('../images/icon-prototype.png');
+    }
+
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    font-family: 'Lato Bold';
+    margin: 1.6rem 0 0;
+  }
+
+  &__description {
+    color: $secondary-font-color;
+    font-family: 'Source Sans Pro Regular';
+    font-size: .9rem;
+    text-align: left;
+  }
+  &__wrapper{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    position: relative;
+    
+  }
+  &__wrapper--text{
+    width: 77%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    flex-wrap: wrap;
+    text-align: left;
+    position: relative;
+    
+  }
+}
+
+@media (max-width: $screen-medium) {
+  .services {
+    margin-top: 3rem;
+  }
+
+  .services__container {
+    margin: 0;
+  }
+
+  .services__header {
+    font-size: 2rem;
+  }
+
+  .service {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: $screen-small) {
+  .services {
+    padding-bottom: 1.5rem;
+  }
+
+  .services__header {
+    margin: 1.5rem 0;
+  }
+
+  .service {
+    flex-basis: 100%;
+  }
+
+  .service__icon {
+    padding: 1.3rem;
+  }
+  .service__wrapper{
+    flex-wrap: nowrap;
+  }
+
+}
