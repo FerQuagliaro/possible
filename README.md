@@ -1,4 +1,5 @@
-https://wonderful-hopper-7b8e6f.netlify.app/
+https://qferb.github.io/possible/
+
 ### Requirements:
 
 You have to install the following softwares on your machine to able to use this automation tool.
